@@ -332,13 +332,14 @@ namespace DistributedLLTSolver
             int start = process * rowsPerProcess + Math.Min(process, remainder);
             return globalIndex - start;
         }
-        
+
         private static int LocalToGlobalIndex(int localIndex, int process, int rowsPerProcess, int remainder)
         {
             int start = process * rowsPerProcess + Math.Min(process, remainder);
             return start + localIndex;
         }
 
-        //some feature
+        //nothing
+        //feature 2
     }
 }
