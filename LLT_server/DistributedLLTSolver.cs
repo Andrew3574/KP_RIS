@@ -332,9 +332,7 @@ namespace DistributedLLTSolver
             int start = process * rowsPerProcess + Math.Min(process, remainder);
             return globalIndex - start;
         }
-<<<<<<< HEAD
 
-=======
         
         private static int LocalToGlobalIndex(int localIndex, int process, int rowsPerProcess, int remainder)
         {
@@ -342,6 +340,5 @@ namespace DistributedLLTSolver
             return start + localIndex;
         }
         randomstuff();
->>>>>>> feature
     }
 }
